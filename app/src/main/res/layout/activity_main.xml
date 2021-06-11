@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF7DF"
+        android:orientation="vertical"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip">
+
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Enter your height:"
+            android:textAlignment="center"
+            android:textColor="#C4000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextHeight"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_border_editheight"
+            android:ems="10"
+            android:hint="cm"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textheight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="Enter your weight:"
+            android:textAlignment="center"
+            android:textColor="#C4000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextWeight"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:ems="10"
+            android:hint="kg"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnConvert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:backgroundTint="@color/button_background_color"
+            android:text="CALCULATE" />
+
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="234dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="364dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/aa" >
+
+    </ImageView>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="400dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:text="Copyright@2021 BMI-AA. All rights reserved."
+        android:textColor="@color/white"
+        android:layout_marginTop="492dp"/>
+
+</RelativeLayout>
